@@ -28,8 +28,8 @@ async function handleFormSubmit(e) {
 
   // Thông báo khi bắt đầu gửi
   Swal.fire({
-    title: "Đang gửi /Sending/...",
-    text: "Vui lòng chờ trong giây lát /Please wait a moment/",
+    title: "Đang gửi ...",
+    text: "Vui lòng chờ trong giây lát.",
     icon: "info",
     allowOutsideClick: false,
     didOpen: () => {
@@ -59,8 +59,8 @@ async function handleFormSubmit(e) {
 
     // Thông báo thành công
     Swal.fire({
-      title: "Thành công /Success/!",
-      text: "Cảm ơn bạn đã gửi phản hồi, thông tin đã được gửi đến dâu rể rồi nha /Thank you for your feedback, the information has been sent to the bride and groom./",
+      title: "Thành công!",
+      text: "Cảm ơn bạn đã gửi phản hồi, thông tin đã được gửi đến dâu rể rồi nha.",
       icon: "success",
       confirmButtonText: "OK",
     });
