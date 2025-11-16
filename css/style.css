@@ -1,0 +1,848 @@
+@font-face {
+    font-family: 'MTD Portrait Script Bounce';
+    src: url('../fonts/MTD-Portrait-Script-Bounce.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('../fonts/SVN-Gotham.woff2') format('woff2'),
+        url('../fonts/SVN-Gotham.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN-GothamBold';
+    src: url('../fonts/SVN-GothamBold.woff2') format('woff2'),
+        url('../fonts/SVN-GothamBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN-GothamLight';
+    src: url('../fonts/SVN-GothamLight.woff2') format('woff2'),
+        url('../fonts/SVN-GothamLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'SVN-GothamItalic';
+    src: url('../fonts/SVN-GothamItalic.woff2') format('woff2'),
+        url('../fonts/SVN-GothamItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN-GothamBoldItalic';
+    src: url('../fonts/SVN-GothamBoldItalic.woff2') format('woff2'),
+        url('../fonts/SVN-GothamBoldItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN-GothamBook';
+    src: url('../fonts/SVN-GothamBook.woff2') format('woff2'),
+        url('../fonts/SVN-GothamBook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN-GothamBookItalic';
+    src: url('../fonts/SVN-GothamBookItalic.woff2') format('woff2'),
+        url('../fonts/SVN-GothamBookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+:root {
+    --bg: #ffffff;
+    --text: #202123ff;
+    --header: #904250ff;
+    --accent: #1f6f7a;
+    --muted: #9aa6ab;
+    --card: #E6E8E0;
+    --border: #231f20;
+    --radius: 12px;
+    --maxw: 534px;
+    --gap: 24px;
+    --accent-soft: rgba(31, 111, 122, 0.08);
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-size: 0.67rem;
+    font-weight: normal;
+    background-color: var(--bg);
+    color: #202123ff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.4;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: var(--maxw);
+    background-color: var(--card);
+    box-shadow:  0 10px 30px rgba(0, 0, 0, 0.248);
+    /* border-right: var(--border) 2px solid; */
+    overflow: hidden;
+}
+
+
+/* header-section ==========================> */
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-bottom: var(--border) 2px solid;
+}
+
+.header-section .invitation-heading {
+    padding: 10% 0 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-section .invitation-heading .subtext {
+    font-family: 'SVN-GothamBook', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 5%;
+}
+
+.header-section .invitation-heading img {
+    width: 65%;
+    height: auto;
+}
+
+.header-section .wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    transform: translateX(-7%);
+}
+
+.header-section .wrapper .text-col {
+    position: relative;
+}
+
+.heart-1, .heart-2, .direction-1, .direction-2, .husband-name, .wife-name {
+    position: absolute;
+}
+
+.header-section .wrapper .text-col img.heart-1 {
+    width: 15px;
+    top: 34%;
+    left: 48%;
+}
+
+.header-section .wrapper .text-col img.direction-1 {
+    width: 40px;
+    height: auto;
+    top: 30%;
+    left: 14%;
+}
+
+.header-section .wrapper .text-col .wife-name {
+    top: 18%;
+    left: 18%;
+}
+
+
+.header-section .wrapper .text-col img.heart-2 {
+    top: 76%;
+    left: 58%;
+    width: 19px;
+    height: auto;
+}
+
+.header-section .wrapper .text-col img.direction-2 {
+    top: 66%;
+    left: 10%;
+    width: 27px;
+    height: auto;
+}
+
+.header-section .wrapper .text-col .husband-name {
+    top: 54%;
+    left: 0;
+}
+
+.header-section .wrapper .text-col p {
+    font-family: "MTD Portrait Script Bounce", cursive;
+    font-weight: 300;
+    font-size: 36px;
+    width: 100%;
+    margin: 0;
+}
+
+
+.header-section .wrapper .image-col {
+    width: 53%;
+    perspective: 1000px;
+}
+
+.header-section .wrapper .text-col {
+    width: 47%;
+}
+
+.header-section .wrapper .image-col img {
+    /* left: -20%; */
+    width: 100%;
+    height: auto;
+    /* aspect-ratio: 210 / 315; */
+    border: 2px solid black;
+}
+
+.flip-tilt-bounce {
+    box-shadow: 10px 10px 20px #4d4d4d79;
+    animation: floatUpDown 3s ease-in-out infinite;
+}
+
+/* Định nghĩa animation */
+@keyframes floatUpDown {
+    0% {
+        transform: rotate(7deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(7deg) translateY(-15px);
+        /* bay lên */
+    }
+
+    100% {
+        transform: rotate(7deg) translateY(0);
+        /* trở về */
+    }
+}
+
+.header-section .invitation-text {
+    font-family: "SVN-GothamBook", sans-serif;
+    font-size: 0.5rem;
+    font-weight: normal;
+}
+
+.header-section .invitation-text p:nth-child(2) {
+    font-family: "SVN-GothamBookItalic", sans-serif;
+}
+
+.header-section .date-section {
+    position: relative;
+    padding-bottom: 10%;
+}
+
+.header-section .date-section img {
+    position: absolute;
+    left: -45%;
+    animation: floatUpDown2 3s ease-in-out infinite;
+    width: 90px;
+    height: auto;
+}
+
+.header-section .date-section h2 {
+    font-family: "SVN-GothamBook", sans-serif;
+    font-size: 22px;
+    font-weight: 200;
+    text-align: center;
+    color: #904250ff;
+    padding-top: 33%;
+    transform: translateX(52%);
+}
+
+@keyframes floatUpDown2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+        /* bay lên */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* trở về */
+    }
+}
+
+/* <================================== end header-section */
+
+/* intro section */
+.intro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10%;
+    border-bottom: var(--border) 2px solid;
+}
+
+.intro p {
+    font-family: "SVN-GothamBook", sans-serif;
+    font-weight: 300;
+    font-size: 10.7px;
+    text-transform: uppercase;
+    line-height: 2;
+    margin: 0;
+}
+
+.intro h2 {
+    font-family: "SVN-GothamBold", sans-serif;
+    font-weight: 300;
+    font-size: 34px;
+    margin: 0;
+}
+
+
+/* timeline-section ==========================> */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-bottom: var(--border) 2px solid;
+}
+
+.timeline h3 {
+    font-family: "MTD Portrait Script Bounce", cursive;
+    font-size: 60px;
+    font-weight: normal;
+    color: #904250ff;
+}
+
+.timeline .content {
+    width: 70%;
+    position: relative;
+}
+
+.timeline .content .divider-line {
+    position: absolute;
+    top: 10%;
+    width: 15px;
+    height: auto;
+}
+
+.timeline .content .items .item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 7%;
+}
+
+.timeline .content .items .item:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.timeline .content .items .item .text,
+.timeline .content .items .item .icon {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.timeline .content .items .item .text p {
+    font-family: "SVN-GothamBook", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 2px 0;
+    font-size: 12px;
+}
+
+.timeline .content .items .item .icon img {
+    width: 47px;
+    height: auto;
+}
+
+
+/* location ========================= > */
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom: var(--border) 2px solid;
+    padding: 10% 0;
+}
+
+.location p, .location h2 {
+    margin: 0;
+}
+
+.location .text {
+    font-family: "SVN-GothamLight", sans-serif;
+    font-weight: normal;
+    font-size: 10.7px;
+    text-transform: uppercase;
+}
+
+.location .location-name {
+    font-family: "MTD Portrait Script Bounce", cursive;
+    font-weight: normal;
+    font-size: 55px;
+    color: var(--header);
+}
+
+/* .location .box-icon {
+    width: 20px;
+    padding-top: 30px;
+}
+
+.location .box-icon img {
+    width: 100%;
+} */
+
+.location .location-address {
+    font-family: "SVN-GothamLight", sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 3%;
+}
+
+.location .end-en-sub {
+    font-family: "SVN-GothamBookItalic", sans-serif;
+    font-weight: normal;
+    padding-top: 4px;
+    padding-bottom: 55px;
+}
+
+/* <================================= end location */
+
+/* photo-section ============================> */
+
+.photo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom: var(--border) 2px solid;
+    padding: 12% 0;
+}
+
+.photo-section .title {
+    font-family: "SVN-GothamBook", sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 800;
+
+}
+
+.photo-section .box-img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0 4%;
+}
+
+.photo-section .box-img img {
+    width: 55%;
+    height: auto;
+    border: 2px solid #000;
+}
+
+.photo-section h2 {
+    font-family: "SVN-GothamLight", sans-serif;
+    font-size: 0.67rem;
+    font-weight: normal;
+    line-height: 1.2;
+    letter-spacing: 1.4px;
+    margin: 0;
+    padding-top: 3px;
+    /* padding-bottom: 60px; */
+}
+
+/* <================================= end photo-section */
+
+/* rsvp ===========================================> */
+
+.rsvp {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    font-size: 0.6rem;
+    font-weight: normal;
+}
+
+.rsvp .title-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.rsvp .head-title {
+    font-family: "SVN-GothamBook", sans-serif;
+    font-size: 0.9rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 25px 0 22px 0;
+}
+
+.rsvp .box-icon {
+    width: 5%;
+    padding-bottom: 5px;
+}
+
+.rsvp .box-icon img {
+    width: 100%;
+}
+
+.rsvp .rsvp-title {
+    font-family: "MTD Portrait Script Bounce", cursive;
+    font-size: 3.2rem;
+    font-weight: normal;
+    color: var(--header);
+    text-align: center;
+    margin: 12% 0 5%;
+}
+
+.rsvp .rsvp-text {
+    font-family: "SVN-GothamLight", sans-serif;
+    text-transform: uppercase;
+    padding: 0 10%;
+}
+
+.rsvp .text-en-sub {
+    font-family: "SVN-GothamBookItalic", sans-serif;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+#rsvp-form {
+    width: 100%;
+}
+
+#rsvp-form .form-group.form-group-confirm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: var(--border) 2px solid;
+}
+
+#rsvp-form .form-group.form-group-confirm .text-box {
+    font-family: "SVN-GothamLight", sans-serif;
+    text-transform: uppercase;
+}
+
+#rsvp-form .form-group.form-group-info {
+    padding: 30px 0 18px 0;
+    border-bottom: var(--border) 2px solid;
+}
+
+
+#rsvp-form .form-group label span {
+    font-style: italic;
+}
+
+#rsvp-form input[type="radio"] {
+    display: none;
+}
+
+#rsvp-form .radio-button {
+    font-family: "SVN-GothamBook", sans-serif;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #fff;
+    text-transform: uppercase;
+    user-select: none;
+    width: 100%;
+    line-height: 1.6;
+    padding: 6px 0;
+    margin: 5px 0;
+}
+
+#rsvp-form .form-group input[type="radio"]:checked+.radio-button {
+    color: #ffffff;
+    background-color: #a5a4a5ff;
+}
+
+#rsvp-form .form-group input.input-text {
+    font-family: "SVN-GothamLight", sans-serif;
+    font-size: 0.7rem;
+    font-weight: normal;
+    font-weight: normal;
+    width: 100%;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #fff;
+    user-select: none;
+    margin-bottom: 12px;
+    padding-left: 13px;
+    outline: none;
+}
+
+#rsvp-form .vegetarian {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#rsvp-form .vegetarian .text-box {
+    font-family: "SVN-GothamLight", sans-serif;
+}
+
+#rsvp-form .vegetarian .button-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+#rsvp-form .vegetarian .text-box .sub-en {
+    font-style: italic;
+}
+
+#rsvp-form .vegetarian .button-box .radio-button {
+    /* margin: 0 10px; */
+    width: 48%;
+    font-size: 0.55rem;
+}
+
+#rsvp-form .form-actions {
+    border-bottom: var(--border) 2px solid;
+    padding-bottom: 5%;
+}
+
+#rsvp-form .form-actions button {
+    background: rgb(80, 80, 80);
+    font-family: "SVN-GothamBook", sans-serif;
+    font-size:8px;
+    font-weight: normal;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 10px 10%;
+    text-decoration: none;
+    border: none;
+}
+
+#rsvp-form .form-actions button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#rsvp-form .form-group.form-group-confirm,
+#rsvp-form .form-group.form-group-info,
+#rsvp-form .vegetarian {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+/* <=================================== end rsvp */
+
+.end {
+    padding: 10%;
+    font-family: "SVN-GothamBold", sans-serif;
+    font-size: 0.6rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+    .header-section .invitation-heading img {
+        width: calc((284 / 480) * 100vw);
+    }
+    .header-section .wrapper .text-col p {
+        font-size: calc((30 / 480) * 100vw);
+    }
+
+    .header-section .wrapper .text-col img.heart-1 {
+        width: calc((15 / 480) * 100vw);;
+    }
+    
+    .header-section .wrapper .text-col img.direction-1 {
+        width: calc((40 / 480) * 100vw);;
+    }
+    
+    .header-section .wrapper .text-col img.heart-2 {
+        width: calc((19 / 480) * 100vw);;
+    }
+    
+    .header-section .wrapper .text-col img.direction-2 {
+        width: calc((27 / 480) * 100vw);
+    }
+
+    .header-section .date-section img {
+        width: calc((90 / 480) * 100vw);
+    }
+    
+    .header-section .date-section h2 {
+        font-size: calc((22 / 480) * 100vw);
+    }
+
+    .intro p {
+        font-size: calc((10.7 / 480) * 100vw);
+    }
+    
+    .intro h2 {
+        font-size: calc((34 / 480) * 100vw);
+    }
+
+    /* timeline */
+    .timeline h3 {
+        font-size:  calc((60 / 480) * 100vw);;
+    }
+    
+    .timeline .content .divider-line {
+        width:  calc((15 / 480) * 100vw);
+    }
+    
+    .timeline .content .items .item .text p {
+        font-size:  calc((12 / 480) * 100vw);
+    }
+    
+    .timeline .content .items .item .icon img {
+        width:  calc((47 / 480) * 100vw);
+    }
+
+    /* location */
+    .location .text, .location .location-address {
+        font-size: calc((10.7 / 480) * 100vw);
+    }
+    
+    .location .location-name {
+        font-size: calc((55 / 480) * 100vw);
+    }
+
+    /* photo-section  */
+    .photo-section .title {
+        font-size: calc((10 / 480) * 100vw);
+    
+    }
+    
+    .photo-section h2 {
+        font-size: calc((10.72 / 480) * 100vw);
+    }
+
+    /* rsvp */
+    .rsvp {
+        font-size: calc((10.72 / 480) * 100vw);
+    }
+    
+    .rsvp .rsvp-title {
+        font-size: calc((51.2 / 480) * 100vw);;
+    }
+}
+
+.pulsate-fwd {
+    -webkit-animation: pulsate-fwd 2s ease-in-out infinite both;
+    animation: pulsate-fwd 2s ease-in-out infinite both;
+}
+
+/**
+ * ----------------------------------------
+ * animation pulsate-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes pulsate-fwd {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes pulsate-fwd {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.ping {
+    -webkit-animation: ping 1s ease-in-out infinite both;
+    animation: ping 1s ease-in-out infinite both;
+}
+
+@-webkit-keyframes ping {
+    0% {
+        -webkit-transform: scale(0.2);
+        transform: scale(0.2);
+        opacity: 0.8;
+    }
+
+    80% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scale(2.2);
+        transform: scale(2.2);
+        opacity: 0;
+    }
+}
+
+@keyframes ping {
+    0% {
+        -webkit-transform: scale(0.2);
+        transform: scale(0.2);
+        opacity: 0.8;
+    }
+
+    80% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scale(2.2);
+        transform: scale(2.2);
+        opacity: 0;
+    }
+}
