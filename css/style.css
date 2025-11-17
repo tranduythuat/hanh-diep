@@ -91,7 +91,7 @@ body {
     color: #202123ff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* line-height: 1.4; */
+    line-height: 1.4;
     display: flex;
     justify-content: center;
 }
