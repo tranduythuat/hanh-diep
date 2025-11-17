@@ -91,7 +91,7 @@ body {
     color: #202123ff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    line-height: 1.4;
+    /* line-height: 1.4; */
     display: flex;
     justify-content: center;
 }
@@ -311,6 +311,13 @@ body {
     margin: 0;
 }
 
+.intro p.hour {
+    font-family: "SVN-GothamBold", sans-serif;
+    font-size: 15px;
+    padding-top: 10%;
+    line-height: 0;
+}
+
 .intro h2 {
     font-family: "SVN-GothamBold", sans-serif;
     font-weight: 300;
@@ -338,6 +345,7 @@ body {
 .timeline .content {
     width: 70%;
     position: relative;
+    margin-bottom: 5%;
 }
 
 .timeline .content .divider-line {
@@ -706,6 +714,10 @@ body {
 
     .intro p {
         font-size: calc((10.7 / 480) * 100vw);
+    }
+
+    .intro p.hour {
+        font-size: calc((15 / 480) * 100vw);;
     }
     
     .intro h2 {
