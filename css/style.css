@@ -388,11 +388,13 @@ body {
     font-family: "SVN-Gotham", sans-serif;
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 11px;
+    font-size: 9px;
+    margin: 0;
+    padding: 0 12%;
 }
 
 .timeline .content .items .item .icon img {
-    width: 47px;
+    width: 52px;
     height: auto;
 }
 
@@ -440,6 +442,19 @@ body {
     font-weight: normal;
     margin-top: 3%;
     font-size: 12px;
+}
+
+.location  .btn-map {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--header);
+    padding: 2% 22%;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid #000;
+    font-family: "SVN-Gotham", sans-serif;
+    font-size: 12px;
+    margin-top: 3%;
 }
 
 .location .end-en-sub {
@@ -606,10 +621,10 @@ body {
 }
 
 #rsvp-form .form-group input.input-text {
-    font-family: "SVN-Gotham", sans-serif;
+    font-family: "SVN-GothamBook", sans-serif;
     font-size: 12px;
-    font-weight: normal;
-    font-weight: normal;
+    font-weight: 700;
+    text-transform: uppercase;
     width: 100%;
     display: inline-block;
     border: 1px solid #000;
@@ -619,7 +634,7 @@ body {
     background-color: #fff;
     user-select: none;
     margin-bottom: 12px;
-    padding: 2%;
+    padding: 2% 3%;
     outline: none;
 }
 
@@ -781,15 +796,17 @@ body {
     }
 
     .timeline .content .items .item .text p.hour {
-        font-size:  calc((11 / 543) * 100vw);
+        font-size:  calc((9 / 543) * 100vw);
     }
     
     .timeline .content .items .item .icon img {
-        width:  calc((47 / 543) * 100vw);
+        width:  calc((52 / 543) * 100vw);
     }
 
     /* location */
-    .location .text, .location .location-address {
+    .location .text, 
+    .location .location-address, 
+    .location .btn-map {
         font-size: calc((12 / 543) * 100vw);
     }
     
