@@ -717,6 +717,23 @@ body {
     border-bottom: var(--border) 2px solid;
 }
 
+/* .qr-btn {
+    background: white;
+    color: #3e4a2c;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid var(--primary-color);
+    padding: 1.5% 8%;
+    margin: 2%;
+    border-radius: 20px;
+    font-style: normal;
+    background-color: #fff;
+    font-family: var(--font-lora);
+    font-size: 11px;
+} */
+
 .qrcode .qr-img {
     width: 60%;
 }
@@ -730,7 +747,7 @@ body {
     font-family: "SVN-GothamBook", sans-serif;
     font-size: 12px;
     font-weight: 700;
-    margin-top: 10%;
+    margin: 10% 0;
     text-transform: uppercase;
 }
 /* Responsive */
