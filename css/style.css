@@ -376,6 +376,18 @@ body {
     flex-direction: column;
 }
 
+
+.timeline .content .items .item .icon.douple-icon {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline .content .items .item .icon.douple-icon img {
+    margin-left: 5%;
+}
+
+
 .timeline .content .items .item .text p.title {
     font-family: "SVN-Gotham", sans-serif;
     font-weight: 700;
@@ -698,14 +710,6 @@ body {
 
 /* <=================================== end rsvp */
 
-.end {
-    padding: 10%;
-    font-family: "SVN-GothamBold", sans-serif;
-    font-size: 12px;
-    font-weight: normal;
-    text-align: center;
-}
-
 .qrcode {
     width: 100%;
     display: flex;
@@ -714,7 +718,7 @@ body {
     text-align: center;
     align-items: center;
     padding: 20% 13%;
-    border-bottom: var(--border) 2px solid;
+    /* border-bottom: var(--border) 2px solid; */
 }
 
 /* .qr-btn {
@@ -743,12 +747,42 @@ body {
     border-radius: 10%;
 }
 
-.qrcode p {
+.qrcode  p {
     font-family: "SVN-GothamBook", sans-serif;
     font-size: 12px;
     font-weight: 700;
     margin: 10% 0;
     text-transform: uppercase;
+}
+
+.end {
+    width: 100%;
+    aspect-ratio: 543 / 403;
+    background: url('../images/end.jpg') no-repeat center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 10%;
+    position: relative;
+}
+
+.end p {
+    font-family: "SVN-GothamBook", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end p.end-text {
+    position: absolute;
+    bottom: 0;
+
 }
 /* Responsive */
 
@@ -855,9 +889,10 @@ body {
         font-size: calc((12 / 543) * 100vw);
     }
 
-    .qrcode p {
+    .qrcode p, .end p {
         font-size: calc((12 / 543) * 100vw);
     }
+
 }
 
 .pulsate-fwd {
