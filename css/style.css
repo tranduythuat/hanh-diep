@@ -14,6 +14,13 @@
 }
 
 @font-face {
+    font-family: 'SVN-GothamRegular';
+    src: url('../fonts/GothamRegular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'SVN-GothamBold';
     src: url('../fonts/SVN-GothamBold.woff2') format('woff2'),
         url('../fonts/SVN-GothamBold.woff') format('woff');
@@ -593,7 +600,7 @@ body {
 }
 
 #rsvp-form .form-group.form-group-confirm .text-box {
-    font-family: "SVN-GothamBook", sans-serif;
+    font-family: "SVN-Gotham", sans-serif;
     font-weight: normal;
     text-transform: uppercase;
 }
@@ -659,12 +666,9 @@ body {
     padding-bottom: 20px;
 }
 
-#rsvp-form .vegetarian .text-box {
-    font-family: "SVN-GothamBook", sans-serif;
+#rsvp-form .vegetarian .text-box p {
+    font-family: "SVN-Gotham", sans-serif;
     font-weight: normal;
-}
-
-#rsvp-form .vegetarian .text-box .sub-text {
     text-transform: uppercase;
 }
 
