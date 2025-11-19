@@ -19,8 +19,8 @@ async function handleFormSubmit(e) {
   console.log("🚀 ~ handleFormSubmit ~ data:", data);
 
   const {
-    confirm: confirm,
     name: name,
+    confirm: confirm,
     guest_number: guest_number,
     confirm_vegetarian: confirm_vegetarian,
   } = data;
@@ -38,7 +38,7 @@ async function handleFormSubmit(e) {
   });
 
   const url =
-    "";
+    "https://script.google.com/macros/s/AKfycbyDJf3kzt-ulc_kKRN1pbppeuKLhGKlj8r9jXlB1TQMdo-ZCYQmjre-vNEqrof-y7zx/exec?sheet=confirm";
 
   try {
     const res = await fetch(url, {

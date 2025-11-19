@@ -637,7 +637,6 @@ body {
     font-family: "SVN-GothamBook", sans-serif;
     font-size: 12px;
     font-weight: normal;
-    text-transform: uppercase;
     width: 100%;
     display: inline-block;
     border: 1px solid #000;
@@ -649,6 +648,10 @@ body {
     margin-bottom: 12px;
     padding: 2% 3%;
     outline: none;
+}
+
+#rsvp-form .form-group input.input-text::placeholder {
+    text-transform: uppercase;
 }
 
 #rsvp-form .vegetarian {
