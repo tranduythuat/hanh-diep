@@ -402,7 +402,7 @@ body {
     font-weight: 300;
     font-size: 9px;
     margin: 0;
-    padding: 0 12%;
+    padding: 0 10%;
 }
 
 .timeline .content .items .item .icon img {
@@ -594,7 +594,7 @@ body {
 
 #rsvp-form .form-group.form-group-confirm .text-box {
     font-family: "SVN-GothamBook", sans-serif;
-    font-weight: 700;
+    font-weight: normal;
     text-transform: uppercase;
 }
 
@@ -614,6 +614,7 @@ body {
 
 #rsvp-form .radio-button {
     font-family: "SVN-Gotham", sans-serif;
+    font-weight: 400;
     display: inline-block;
     border: 1px solid #000;
     border-radius: 50px;
@@ -635,7 +636,7 @@ body {
 #rsvp-form .form-group input.input-text {
     font-family: "SVN-GothamBook", sans-serif;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: normal;
     text-transform: uppercase;
     width: 100%;
     display: inline-block;
@@ -657,7 +658,7 @@ body {
 
 #rsvp-form .vegetarian .text-box {
     font-family: "SVN-GothamBook", sans-serif;
-    font-weight: 700;
+    font-weight: normal;
 }
 
 #rsvp-form .vegetarian .text-box .sub-text {
